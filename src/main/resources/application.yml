@@ -1,0 +1,38 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: 'jdbc:h2:file:/data/demo'
+    username: sa
+  jpa:
+    show-sql: true
+    database-platform: 'org.hibernate.dialect.H2Dialect'
+  data:
+    mongodb:
+      uri: mongodb://localhost/b2b-wallet
+  servlet:
+    multipart:
+      max-file-size: 20MB
+
+app:
+  image-resize:
+    width: 400
+    height: 250
+    min-width: 150
+    min-height: 100
+    default-format: jpg
+    width-proportion: 6154 # percentage
+
+  scheduling-delay: 1000000
+  segundos-processo: 180
+  enable: true
+  total: 100
+  desc-teste: "sei la"
+  path: ${abcd}
+  roles:
+    - admin
+    - user
+    - manager
+
+teste:
+  url: 'abc123'
